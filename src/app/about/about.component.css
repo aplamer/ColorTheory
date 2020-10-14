@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+.about{
+    text-align: center;
+    color: rgb(201, 201, 201);
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+}
+
+.btn{
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    margin: 20px;
+}

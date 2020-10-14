@@ -1,0 +1,52 @@
+<!--
+    Color Symbolism Page 
+-->
+<!--
+    div that gives the "about" stylings (the font, the font size, etc)
+-->
+<div class = "about">
+    <div class = "container">
+        <div class = "col-xs-12">
+            <!--
+                buttons at the top of the page to navigate to the different children components
+            -->
+            <button class = "btn btn-primary" (click) = "clickGeneral()">
+                General Symbolism
+            </button>
+            <button class = "btn btn-primary" (click) = "clickWestern()">
+                Western Symbolism
+            </button>
+            <button class = "btn btn-primary" (click) = "clickEastern()">
+                Eastern Symbolism
+            </button>
+
+            <!--
+                Search Bar. Two way binded with the component property "filtered" which gets passed through a filter pipe (more info down below).
+            -->
+            <h3>Search Bar:</h3>
+            <input type = "text" [(ngModel)] = "filtered">
+            <hr style = "background-color: white;">
+
+            <!--
+                ngFor loop that looks at the "symbolisms" array in the component and passes them through the "filter" pipe. This pipe will compare whatever
+                is in the search bar with the elements in the "symbolisms" array and if the search term is found within any of the sub elements of those elements
+                (even if it's only a substring), it will display the entire element. This filter pipe is NOT case sensitive. See filter.pipe.ts for more info.
+            -->
+            <div *ngFor = "let symbolism of symbolisms | filter: filtered">
+                <div class = "container">
+                    <!--
+                        displays the element down here, styling it using the sub element "style". Ignore the error on the {{symbolism.style}} that works fine
+                    -->
+                <span style = "color: {{symbolism.style}}">{{symbolism.color}}</span> : {{symbolism.meaning}} ({{symbolism.origin}})
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--
+            The generic display that will only show if the search bar is emptied. Note that the search bar automatically empties when the user clicks on any of
+            the navigation buttons at the top.
+        -->
+        <router-outlet *ngIf = "filtered == '' "></router-outlet>
+        <hr style = "background-color: white;">
+    </div>
+</div>

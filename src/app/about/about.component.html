@@ -1,0 +1,26 @@
+<div class = "about">
+    <img src = "../../assets/colorwheel.png">
+    <h1 style = "font-weight: bold;">What is color theory?</h1>
+    <p class = "container">
+        Color theory is a set of priniciples and guidelines that help artists and designer utilize colors in order to serve a specific purpose within their work. 
+    </p>
+
+    <p class = "container">
+        While color theory is a complicated and very complex concept it can be generally broken down into 3 pieces: <span style = "color: crimson; font-weight: bold;">Color, Color Harmony and Symbolism.</span> 
+        While on their own these three parts of color theory are somewhat easy to grasp it's the use and combination of all three in cunjunction with one another that makes color theory so multifaceted.
+    </p>
+    <div class = "container">
+        <div class = "col-xs-12">
+            <button class = "btn btn-primary" (click) = "clickColor()">
+                Color
+            </button>
+            <button class = "btn btn-primary" (click) = "clickHarmony()">
+                Harmony
+            </button>
+            <button class = "btn btn-primary" (click) = "clickSymbolism()">
+                Symbolism
+            </button>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

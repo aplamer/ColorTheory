@@ -1,0 +1,37 @@
+<div>
+    <div class = "instructions">
+        Test out different Hues, Values and Saturations with the color picker, then store them in the squares on the right.
+    </div>
+</div>
+
+<!--
+    Container that separates the color picker from the fill squares
+-->
+<div class = "container-fluid">
+    <div class="row">
+        <!--
+            Color Picker Section contains color picker using @jammes/iro api, has accompanied text for clarification
+        -->
+        <div class="col-sm-5">
+            <div class="ColorPicker" id="boxPicker"> 
+                <h3>Value and Saturation Box</h3>
+            </div>
+                <h3 id = "hue">Hue Slider</h3>
+        </div>
+    
+        <!--
+            Fill Square Section where one can store colors within squares(buttons in reality)
+        -->
+        <div class="col-sm-7">
+            <!--
+                ngFor loop that takes the "boxes" array from the component and iterates over it to generate (at the moment) 70 fill boxes which are really just buttons that change
+                colors when clicked on. The buttons get assigned a class based on there index and when clicked uses the changeButtonColor function in the component.
+                See color.component.ts for more info on this function.
+            -->
+            <div *ngFor = "let box of boxes; let i = index">
+            <button class = "fillers {{i}}" (click) = "changeButtonColor(i)">
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
