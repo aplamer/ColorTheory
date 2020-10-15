@@ -59,8 +59,8 @@
 }
 
 .coloredButton{
-    margin-top: 20px;
     height: 150px;
     width: 75px;
     border-style: none;
+    margin: 20px 5px 0px 5px;
 }

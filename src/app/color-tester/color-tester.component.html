@@ -8,7 +8,7 @@
   <div class = "container">
     <div class = "col-xs-12">
       <div *ngFor = "let color of colors; let i = index" style = "display: inline;">
-        <button type = "button" id = "{{i}}" class = "coloredButton">
+        <button (click) = "toggleTrue(i)" id = "{{i}}" class = "coloredButton">
         </button>
       </div>
       <hr style = "background-color: white;">
