@@ -1,17 +1,18 @@
 <div>
     <div class = "instructions">
-        Choose one or more colors on the wheel.
+        Choose one or more colors to see their color harmonies.
     </div>
 </div>
 
-<div class = "container-fluid">
-  <div class="row">
-    <div class="col">
-      Color Wheel
-    </div>
-    <div class="col-md-9">
-      Hi
+<div class = "about">
+  <div class = "container">
+    <div class = "col-xs-12">
+      <div *ngFor = "let color of colors; let i = index" style = "display: inline;">
+        <button type = "button" id = "{{i}}" class = "coloredButton">
+        </button>
+      </div>
+      <hr style = "background-color: white;">
       <router-outlet></router-outlet>
     </div>
-  </div>
+  </div>  
 </div>

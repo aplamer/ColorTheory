@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ColorWheelComponent } from './color-wheel.component';
+import { TriadComponent } from './triad.component';
 
-describe('ColorWheelComponent', () => {
-  let component: ColorWheelComponent;
-  let fixture: ComponentFixture<ColorWheelComponent>;
+describe('TriadComponent', () => {
+  let component: TriadComponent;
+  let fixture: ComponentFixture<TriadComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ColorWheelComponent ]
+      declarations: [ TriadComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ColorWheelComponent);
+    fixture = TestBed.createComponent(TriadComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

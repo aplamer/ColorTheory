@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {ColorTesterComponent} from './color-tester/color-tester.component'
-import {CombinationComponent} from './color-tester/combination/combination.component'
+import {AnalogousComponent} from './color-tester/combination/analogous/analogous.component'
+import {ComplementaryComponent} from './color-tester/combination/complementary/complementary.component'
+import {DoubleComplementaryComponent} from './color-tester/combination/double-complementary/double-complementary.component'
+import {MonochromaticComponent} from './color-tester/combination/monochromatic/monochromatic.component'
+import {SplitComplementaryComponent} from './color-tester/combination/split-complementary/split-complementary.component'
+import {TriadComponent} from './color-tester/combination/triad/triad.component'
 import {AboutComponent} from './about/about.component'
 import { ColorAboutComponent } from './about/color-about/color-about.component';
 import { HarmonyComponent } from './about/harmony/harmony.component';
@@ -14,7 +19,12 @@ import { EasternComponent } from './color-symbolism/eastern/eastern.component';
 const routes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full'},
   {path: 'color-tester', component: ColorTesterComponent, children: [
-    {path: 'combination', component: CombinationComponent}
+    {path: 'analogous', component: AnalogousComponent},
+    {path: 'complementary', component: ComplementaryComponent},
+    {path: 'doublecomplementary', component: DoubleComplementaryComponent},
+    {path: 'monochromatic', component: MonochromaticComponent},
+    {path: 'splitcomplementary', component: SplitComplementaryComponent},
+    {path: 'triad', component: TriadComponent},
   ]},
   {path: 'color-symbolism', component: ColorSymbolismComponent, children:[
     {path: 'general', component: GeneralComponent},

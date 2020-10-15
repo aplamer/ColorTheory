@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./color-tester.component.css']
 })
 export class ColorTesterComponent implements OnInit {
-
+  colors = [];
   constructor() { }
 
   ngOnInit(): void {
+    for(var i = 0; i <= 11; i++){
+      this.colors.push(false);
+    }
   }
 
 }

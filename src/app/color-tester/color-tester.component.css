@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 .instructions{
     padding: 10px;
     font-size: 40px;
@@ -6,4 +9,58 @@
     background-color: black;
     color: rgb(233, 233, 233);
     font-family: 'Sansita Swashed', cursive;
+}
+.about{
+    text-align: center;
+    color: rgb(201, 201, 201);
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+}
+
+.container{
+    text-align: center;
+}
+
+[id = "0"]{
+    background-color: #fe2712;
+}
+[id = "1"]{
+    background-color: #fd5308;
+}
+[id = "2"]{
+    background-color: #fb9902;
+}
+[id = "3"]{
+    background-color: #fabc02;
+}
+[id = "4"]{
+    background-color: #fefe33;
+}
+[id = "5"]{
+    background-color: #d0ea2b;
+}
+[id = "6"]{
+    background-color: #66b032;
+}
+[id = "7"]{
+    background-color: #0392ce;
+}
+[id = "8"]{
+    background-color: #0247fe;
+}
+[id = "9"]{
+    background-color:#3d01a4;
+}
+[id = "10"]{
+    background-color: #8601af;
+}
+[id = "11"]{
+    background-color: #a7194b;
+}
+
+.coloredButton{
+    margin-top: 20px;
+    height: 150px;
+    width: 75px;
+    border-style: none;
 }

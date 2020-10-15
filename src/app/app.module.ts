@@ -19,6 +19,12 @@ import { EasternComponent } from './color-symbolism/eastern/eastern.component';
 import { WesternComponent } from './color-symbolism/western/western.component'
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './color-symbolism/filter.pipe';
+import { MonochromaticComponent } from './color-tester/combination/monochromatic/monochromatic.component';
+import { ComplementaryComponent } from './color-tester/combination/complementary/complementary.component';
+import { SplitComplementaryComponent } from './color-tester/combination/split-complementary/split-complementary.component';
+import { DoubleComplementaryComponent } from './color-tester/combination/double-complementary/double-complementary.component';
+import { AnalogousComponent } from './color-tester/combination/analogous/analogous.component';
+import { TriadComponent } from './color-tester/combination/triad/triad.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +43,12 @@ import { FilterPipe } from './color-symbolism/filter.pipe';
     EasternComponent,
     WesternComponent,
     FilterPipe,
+    MonochromaticComponent,
+    ComplementaryComponent,
+    SplitComplementaryComponent,
+    DoubleComplementaryComponent,
+    AnalogousComponent,
+    TriadComponent,
   ],
   imports: [
     BrowserModule,
