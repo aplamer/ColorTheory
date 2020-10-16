@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./color-tester.component.css']
 })
 export class ColorTesterComponent implements OnInit {
-  colors = new Array(10).fill(false);
+  colors = new Array(12).fill(false);
 
   constructor(private router: Router) {
   }
