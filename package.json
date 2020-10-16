@@ -1,6 +1,11 @@
 {
   "name": "color-theory",
   "version": "0.0.0",
+  "build": {
+    "directories": {
+    "output": "release/"
+    }
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

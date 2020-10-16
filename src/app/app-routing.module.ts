@@ -17,6 +17,7 @@ import { GeneralComponent } from './color-symbolism/general/general.component';
 import { WesternComponent } from './color-symbolism/western/western.component';
 import { EasternComponent } from './color-symbolism/eastern/eastern.component';
 import { NoneComponent } from './color-tester/combination/none/none.component';
+
 const routes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full'},
   {path: 'color-tester', component: ColorTesterComponent, children: [
