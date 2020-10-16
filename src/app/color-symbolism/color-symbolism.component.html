@@ -37,7 +37,7 @@
                     <!--
                         displays the element down here, styling it using the sub element "style". Ignore the error on the {{symbolism.style}} that works fine
                     -->
-                <span style = "color: {{symbolism.style}}">{{symbolism.color}}</span> : {{symbolism.meaning}} ({{symbolism.origin}})
+                <span style = "color: {{symbolism.style}}">{{symbolism.color}}</span> <span *ngIf = "symbolism.origin != ''">: {{symbolism.meaning}} ({{symbolism.origin}})</span>
                 </div>
                 <br>
             </div>

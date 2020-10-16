@@ -33,6 +33,16 @@ export class FilterPipe implements PipeTransform {
 
     }
     
+    if(resultArray.length == 0){
+      resultArray.push(
+        {
+        color: "No Results found.",
+        origin: "",
+        meaning: "",
+        style: ""
+        }
+      )
+    }
     return resultArray;
   }
 

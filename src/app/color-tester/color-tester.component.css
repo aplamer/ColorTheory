@@ -63,4 +63,9 @@
     width: 75px;
     border-style: none;
     margin: 20px 5px 0px 5px;
+    outline: none;
 }
+
+.active{
+    border: 10px solid white;
+  } 

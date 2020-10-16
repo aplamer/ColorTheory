@@ -7,16 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./color-tester.component.css']
 })
 export class ColorTesterComponent implements OnInit {
-  colors = [];
+  colors = new Array(10).fill(false);
 
-  constructor(private router: Router) { 
-    for(var i = 0; i <= 11; i++){
-      this.colors.push(false);
-    }
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
-    this.router.navigate(['/color-tester']);
+    this.router.navigate(['/color-tester/none']);
   }
 
   checkRelationship(){
@@ -69,23 +66,12 @@ export class ColorTesterComponent implements OnInit {
     }
 
     else{
-      this.router.navigate(['/color-tester']);
-      console.log(checker);
-      console.log(firstTrue);
+      this.router.navigate(['/color-tester/none']);
     }
   }
 
   toggleTrue(id: number){
     this.colors[id] = !this.colors[id];
-    var button = document.getElementById(id.toString());
-    if(this.colors[id] === true){
-      button.style.border = "10px";
-      button.style.borderColor = "white";
-      button.style.borderStyle = "solid";
-    }
-    else{
-      button.style.borderStyle = "none";
-    }
     this.checkRelationship();
   }
 

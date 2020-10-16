@@ -16,6 +16,7 @@ import { ColorSymbolismComponent } from './color-symbolism/color-symbolism.compo
 import { GeneralComponent } from './color-symbolism/general/general.component';
 import { WesternComponent } from './color-symbolism/western/western.component';
 import { EasternComponent } from './color-symbolism/eastern/eastern.component';
+import { NoneComponent } from './color-tester/combination/none/none.component';
 const routes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full'},
   {path: 'color-tester', component: ColorTesterComponent, children: [
@@ -25,11 +26,12 @@ const routes: Routes = [
     {path: 'monochromatic', component: MonochromaticComponent},
     {path: 'splitcomplementary', component: SplitComplementaryComponent},
     {path: 'triad', component: TriadComponent},
+    {path: 'none', component: NoneComponent}
   ]},
   {path: 'color-symbolism', component: ColorSymbolismComponent, children:[
     {path: 'general', component: GeneralComponent},
     {path: 'western', component: WesternComponent},
-    {path: 'eastern', component: EasternComponent}
+    {path: 'eastern', component: EasternComponent},
   ]},
   {path: 'color', component: ColorComponent},
   {path: 'about', component:AboutComponent, children: [

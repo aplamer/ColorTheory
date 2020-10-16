@@ -22,6 +22,7 @@ import { SplitComplementaryComponent } from './color-tester/combination/split-co
 import { DoubleComplementaryComponent } from './color-tester/combination/double-complementary/double-complementary.component';
 import { AnalogousComponent } from './color-tester/combination/analogous/analogous.component';
 import { TriadComponent } from './color-tester/combination/triad/triad.component';
+import { NoneComponent } from './color-tester/combination/none/none.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { TriadComponent } from './color-tester/combination/triad/triad.component
     DoubleComplementaryComponent,
     AnalogousComponent,
     TriadComponent,
+    NoneComponent,
   ],
   imports: [
     BrowserModule,
