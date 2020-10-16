@@ -27,7 +27,9 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": ["node_modules/@jaames/iro/dist/iro.js"]
+            "scripts": [
+              "node_modules/@jaames/iro/dist/iro.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -118,8 +120,13 @@
               "devServerTarget": "ColorTheory:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ColorTheory"
 }
