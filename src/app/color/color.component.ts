@@ -19,7 +19,7 @@ export class ColorComponent implements OnInit {
   ngOnInit(): void {
     
     this.colorPicker = iro.ColorPicker("#boxPicker", {
-      width: 500,
+      width: 450,
       color: "rgb(255, 0, 0)",
       borderWidth: 1,
       borderColor: "#fff",
@@ -36,7 +36,7 @@ export class ColorComponent implements OnInit {
       ]
     });
 
-    for(var i = 1; i <=70; i++){
+    for(var i = 1; i <=48; i++){
       this.boxes.push(i);
     }
   }

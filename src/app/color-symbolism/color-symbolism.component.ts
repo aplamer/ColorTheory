@@ -392,7 +392,6 @@ export class ColorSymbolismComponent implements OnInit {
 
   ngOnInit(): void {
     //page will navigate to general component by default
-    this.router.navigate(['/color-symbolism/general']);
   }
 
   //function to generate general component
